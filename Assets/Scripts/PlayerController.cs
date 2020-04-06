@@ -60,7 +60,7 @@ public class PlayerController : MonoBehaviour
 
 	void	ProcessActionInput()
 	{
-		if (Input.GetButtonDown("Fire"))
+		if (Input.GetKeyDown(KeyCode.Space))
 		{
 			Fire();
 		}
