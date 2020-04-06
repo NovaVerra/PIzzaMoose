@@ -15,8 +15,10 @@ public class DestroyOffScreen : MonoBehaviour
 	// Update is called once per frame
 	void Update()
 	{
+		// Destroys animals if they're OOB (essentially means the player failed to eliminate animal)
 		if (transform.position.z < LowerBound || transform.position.z > UpperBound)
 		{
+			Debug.Log("Game Over!");
 			Destroy(gameObject);
 		}
 	}
