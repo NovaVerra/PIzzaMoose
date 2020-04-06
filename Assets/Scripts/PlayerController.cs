@@ -6,21 +6,16 @@ public class PlayerController : MonoBehaviour
 {
 	/** Game Configuration */
 	[Header("Movement")]
-	[SerializeField]
-	float	MovementSpeed = 20.0f;
+	[SerializeField] float	MovementSpeed = 20.0f;
 
-	[SerializeField]
-	float	X_Range = 20.0f;
+	[SerializeField] float	X_Range = 20.0f;
 
 	[Header("Projectile")]
-	[SerializeField]
-	GameObject	Projectile;
+	[SerializeField] GameObject	Projectile;
 
-	[SerializeField]
-	Transform	Parent;
+	[SerializeField] Transform	Parent;
 
-	[SerializeField]
-	float		DestroyDelay = 0.5f;
+	[SerializeField] float		DestroyDelay = 0.5f;
 
 	// Start is called before the first frame update
 	void	Start()
