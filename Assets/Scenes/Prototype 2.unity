@@ -143,7 +143,7 @@ MonoBehaviour:
   X_Range: 20
   Projectile: {fileID: 7906881469279124682, guid: a52e2310a9aaf4568bcd0a409e6469e9,
     type: 3}
-  Parent: {fileID: 580810357}
+  Parent: {fileID: 1647571933}
   DestroyDelay: 0.5
 --- !u!1 &170076733
 GameObject:
@@ -687,6 +687,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1647571933}
   - component: {fileID: 1647571932}
+  - component: {fileID: 1647571934}
   m_Layer: 0
   m_Name: SpawnHandler
   m_TagString: Untagged
@@ -714,6 +715,8 @@ MonoBehaviour:
   Parent: {fileID: 580810357}
   X_SpawnRange: 20
   Z_SpawnPos: 29
+  StartDelay: 2
+  SpawnInterval: 1.5
 --- !u!4 &1647571933
 Transform:
   m_ObjectHideFlags: 0
@@ -728,3 +731,19 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 5
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1647571934
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1647571931}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 45c0e1f24e2ce4a5b9bf1f3a7499cd45, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  PooledObjects: []
+  ObjectToPool: {fileID: 7906881469279124682, guid: a52e2310a9aaf4568bcd0a409e6469e9,
+    type: 3}
+  AmountToPool: 15
